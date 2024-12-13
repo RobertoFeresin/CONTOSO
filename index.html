@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./dependencias/node_modules/bootstrap/dist/css/bootstrap.css">
     <title>CONTOSO</title>
 </head>
-<!---->
+
 <body>
     <header>
         <nav class="navbar bg-body-tertiary" style="background-color: #201f4c;">
@@ -15,181 +15,77 @@
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <ul class="list-unstyled d-flex align-items-center mb-0">
                         <li class="me-3">
-                            <img src="/CONTOSO/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo" width="50"
-                                height="40">
+                            <img src="/CONTOSO/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo" width="50" height="40">
                         </li>
                         <li class="me-3">
                             <p class="m-0">|</p>
                         </li>
-                        <li>Contoso company</li>
-                        <li style="background-color: #201f4c;">
-                            <nav class="navbar" style="background-color: #201f4c;">
-                                <div class="container-fluid" style="background-color: #201f4c;">
-                                    <form class="d-flex" role="search" style="background-color: #201f4c;">
-                                        <!-- Excluindo o fundo do input -->
-                                        <input class="form-control me-2" type="search" placeholder="Search"
-                                            aria-label="Search">
-                                    </form>
-                                </div>
-                            </nav>
+                        <li>Contoso Company</li>
+                        <li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
                         </li>
-
-
                         <li>
                             <img src="./dependencias/Imagens/user-icon.png" alt="Icone User" width="50" height="40">
                         </li>
                         <li>
-                            <img src="./dependencias/Imagens/notification-icon.png" alt="Icone Notificação" width="50"
-                                height="40">
+                            <img src="./dependencias/Imagens/notification-icon.png" alt="Icone Notificação" width="50" height="40">
                         </li>
                         <li>
-                            <img src="./dependencias/Imagens/configuration-icon.png" alt="Icone Configuração" width="50"
-                                height="40">
+                            <img src="./dependencias/Imagens/configuration-icon.png" alt="Icone Configuração" width="50" height="40">
                         </li>
-                        <li><img src="./dependencias/Imagens/avatar-icon.png" alt="Icone Avatar" width="50" height="40">
+                        <li>
+                            <img src="./dependencias/Imagens/avatar-icon.png" alt="Icone Avatar" width="50" height="40">
                         </li>
                     </ul>
                 </a>
             </div>
         </nav>
     </header>
+
     <main>
-        <a>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
-                            class="d-inline-block align-text-top">
-                        Bootstrap
-                    </a>
+        <div class="grid text-center" style="--bs-columns: 3;">
+            <div>First auto-column</div>
+            <div class="grid">
+                <!-- Repeteção dos cards -->
+                <div class="row">
+                    <!-- Cada card foi ajustado para estar em uma estrutura de grid do Bootstrap -->
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="Tickets Created">
+                            <div class="card-body">
+                                <h5 class="card-title">Tickets Created</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="Tickets Closed">
+                            <div class="card-body">
+                                <h5 class="card-title">Tickets Closed</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="Close Rate">
+                            <div class="card-body">
+                                <h5 class="card-title">Close Rate</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Outras colunas continuam para os outros cards -->
                 </div>
-            </nav>
-        </a>
-        </div>
-        </nav>
-        <!---->
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickets Created</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickes Closed</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Clouse Rate</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Within SLA</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <!---->
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickets by Priority</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickets by Category</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickets by Severity</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Top IT Agent</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <!---->
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickets by Work Type</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tickets Overtime</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Avarange Satisfaction Rating</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
     </main>
-
 </body>
 
 </html>
