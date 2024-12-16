@@ -11,30 +11,54 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #20204c;">
-    <div class="container-fluid">
-      <ul class="navbar-custom">
-        <li><img src="/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo da marca contoso"></li>
-        <li>
-          <p>|</p>
-        </li>
-        <li>
-          <p>Contoso company</p>
-        </li>
-      </ul>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #20204c;">
+      <div class="container-fluid">
 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <img src="/dependencias/Imagens/user-icon (2).png" class="img-fluid" alt="Imagem representando o usuário da">
-        <img src="/dependencias/Imagens/notifications-icon.png" class="img-fluid"
-          alt="Imagem representando o usuário da">
-        <img src="/dependencias/Imagens/settings-icon.png" class="img-fluid" alt="">
-        <img src="/dependencias/Imagens/avatar-icon.png" class="img-fluid" alt="Imagem representando o usuário da">
-      </form>
+        <!-- Custom Navbar with Logo and Text -->
+        <a class="navbar-brand" href="#">
+          <img src="/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo da marca contoso" height="40">
+          <span>Contoso company</span>
+        </a>
 
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu and Search Form -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- Icons in Navbar, visible on desktop -->
+            <img src="/dependencias/Imagens/user-icon (2).png" class="img-fluid" alt="Usuário" height="30" width="30">
+            <img src="/dependencias/Imagens/notifications-icon.png" class="img-fluid" alt="Notificações" height="30" width="30">
+            <img src="/dependencias/Imagens/settings-icon.png" class="img-fluid" alt="Configurações" height="30" width="30">
+            <img src="/dependencias/Imagens/avatar-icon.png" class="img-fluid" alt="Avatar" height="30" width="30">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div id="grid-central">
+      <div id="grid-esquerda">
+        <!-- Left Grid Content -->
+      </div>
+      <div id="grid-direita">
+        <!-- Right Grid Content -->
+      </div>
     </div>
-    </div>
-  </nav>
+  </main>
+
   <script src="./dependencias/Ferramentas/Boostrap5/js/bootstrap.js"></script>
 </body>
 
