@@ -53,26 +53,94 @@
     <div id="grid-central">
       <div id="grid-esquerda">
         <div class="container">
-          <button type="button" class="btn" onclick="toggleCollapse()">Global</button>
-          <div id="demo" class="collapsible-content">
-           <div id="grid-esquerda">
-    <button type="button" class="button-with-icon">
-        <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
-        <span class="button-text">North America</span>
-    </button>
-    <button type="button" class="button-with-icon">
-        <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
-        <span class="button-text">EMEA</span>
-    </button>
-    <button type="button" class="button-with-icon">
-      <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
-      <span class="button-text">APAC</span>
-  </button>
-</div>
-
+    
+          <!-- Global Section -->
+          <button type="button" class="btn" onclick="toggleCollapse('global')">Global</button>
+          <div id="global" class="collapsible-content">
+            <div id="grid-esquerda">
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">North America</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">EMEA</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">APAC</span>
+              </button>
+            </div>
           </div>
+    
+          <!-- Operations Section -->
+          <button type="button" class="btn" onclick="toggleCollapse('operations')">Operations</button>
+          <div id="operations" class="collapsible-content">
+            <div id="grid-esquerda">
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">Operation Global</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">Operation National</span>
+              </button>
+            </div>
+          </div>
+    
+          <!-- StakeHolders Section -->
+          <button type="button" class="btn" onclick="toggleCollapse('stakeholders')">StakeHolders</button>
+          <div id="stakeholders" class="collapsible-content">
+            <div id="grid-esquerda">
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">StakeHolders public</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">StakeHolders private</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">APAC</span>
+              </button>
+            </div>
+          </div>
+    
+          <!-- Market Analysis Section -->
+          <button type="button" class="btn" onclick="toggleCollapse('market-analysis')">Market analysis</button>
+          <div id="market-analysis" class="collapsible-content">
+            <div id="grid-esquerda">
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">2030</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">2025</span>
+              </button>
+            </div>
+          </div>
+    
+          <!-- Suppliers Section -->
+          <button type="button" class="btn" onclick="toggleCollapse('suppliers')">Suppliers</button>
+          <div id="suppliers" class="collapsible-content">
+            <div id="grid-esquerda">
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">Team</span>
+              </button>
+              <button type="button" class="button-with-icon">
+                <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+                <span class="button-text">Group</span>
+              </button>
+            </div>
+          </div>
+    
         </div>
       </div>
+
+    
 
       <div id="grid-direita">
         <div id="grid-cabecalho-direita">
