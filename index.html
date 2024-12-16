@@ -2,53 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dependencias/node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>CONTOSO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dependencias/Ferramentas/Boostrap5/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <title>CONSTOSO</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary" style="background-color: #201f4c;" heitgh="30">
-            <div class="container-fluid" style="background-color: #201f4c;">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li class="me-3">
-                            <img src="/CONTOSO/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo" width="auto" height="auto">
-                        </li>
-                        <li class="me-3">
-                            <p style="color: #7fabbd;">|</p>
-                        </li>
-                        <li style="color: #7fabbd;"> Contoso Company </li>
-                        <li>
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            </form>
-                        </li>
-                        <li>
-                            <img src="./dependencias/Imagens/user-icon (2).png" alt="Icone User" width="50" height="40">
-                        </li>
-                        <li>
-                            <img src="./dependencias/Imagens/notifications-icon.png" alt="Icone Notificação" width="50" height="40">
-                        </li>
-                        <li>
-                            <img src="./dependencias/Imagens/settings-icon.png" alt="Icone Configuração" width="50" height="40">
-                        </li>
-                        <li>
-                            <img src="./dependencias/Imagens/avatar-icon.png" alt="Icone Avatar" width="50" height="40">
-                        </li>
-                    </ul>
-                </a>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <div class="grid text-center" style="background-color: #3c3e61;">
-            
-            <div class="row mb-4">
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #20204c;">
+      <div class="container-fluid">
 
+<<<<<<< HEAD
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem; background-color: #201f4c;">
                         <img src="./dependencias/Imagens/support_agent.png" width="40" height="40" alt="Tickets Created">
@@ -86,72 +54,59 @@
                     </div>
                 </div>
             </div>
+=======
+        <!-- Custom Navbar with Logo and Text -->
+        <a class="navbar-brand" href="#">
+          <ul class="navbar-custom">
+            <li>
+              <img src="/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo da marca contoso" height="40">
+            </li>
+            <li>
+              <p>|</p>
+            </li>
+            <li>
+              <p>Contoso company</p>
+            </li>
+          </ul>
+        </a>
+>>>>>>> develop
 
-            <div class="row mb-4">
-                <div class="col-md-3">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <div class="card-body">
-                            <h5 style="color: white;">Tickets by Priority</h5>
-                            <img src="./dependencias/Imagens/tag-tickets-by-priority.png" alt="Imagem de um gradico representado ..." width="200">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <div class="card-body">
-                            <h5 style="color: white;">Tickets by Category</h5>
-                            <img src="./dependencias/Imagens/tag-tickets-by-category.png" alt="Imagem de um grafico representado ..." width="200">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <div class="card-body">
-                            <h5 style="color: white;">Tickets by Severity</h5>
-                            <img src="./dependencias/Imagens/tag-tickets-by-severity.png" alt="Imagem de um grafico representado ..." width="200">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <div class="card-body">
-                            <h5 style="color: white;">Top IT Agent</h5>
-                            <img src="./dependencias/Imagens/Top-IT-Agent.png" alt="Imagem de um grafico representando..." width="250">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <div class="card-body">
-                            <h5 style="color: white;">Tickets by Work Type</h5>
-                            <img src="./dependencias/Imagens/tag-tickets-by-work-type.png" alt="Imagem de um grafico representando ..." width="200">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <img src="./dependencias/Imagens/statusGraphicOvertime.png" width="70" height="25" alt="Tickets Overtime">
-                        <div class="card-body">
-                            <h5 style="color: white;">Tickets Overtime</h5>
-                            <img src="./dependencias/Imagens/tag-tickets-Overtime.png" alt="Imagem de um gráfico representando ..." width="250">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; background-color: #201f4c;">
-                        <img src="./dependencias/Imagens/starsAvarangeImage.png" width="80" height="15" alt="Average Satisfaction Rating">
-                        <div class="card-body">
-                            <h5 style="color: white;">Average Satisfaction Rating</h5>
-                            <img src="./dependencias/Imagens/tag-avarange satisfaction-rating.png" alt="Imagem de um gráfico representando ..." width="200">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Navbar Menu and Search Form -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- Icons in Navbar, visible on desktop -->
+            <img src="/dependencias/Imagens/user-icon (2).png" class="img-fluid" alt="Usuário" height="30" width="30">
+            <img src="/dependencias/Imagens/notifications-icon.png" class="img-fluid" alt="Notificações" height="30" width="30">
+            <img src="/dependencias/Imagens/settings-icon.png" class="img-fluid" alt="Configurações" height="30" width="30">
+            <img src="/dependencias/Imagens/avatar-icon.png" class="img-fluid" alt="Avatar" height="30" width="30">
+          </form>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div id="grid-central">
+      <div id="grid-esquerda">
+        <!-- Left Grid Content -->
+      </div>
+      <div id="grid-direita">
+        <!-- Right Grid Content -->
+      </div>
+    </div>
+  </main>
+
+  <script src="./dependencias/Ferramentas/Boostrap5/js/bootstrap.js"></script>
 </body>
 
 </html>
