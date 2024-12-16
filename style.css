@@ -124,7 +124,7 @@ header {
 }
 
 #grid-direita {
-    background-color: #3c3e61;
+    background-color: rgba(60, 62, 97, 0.9); /* 0.5 é 50% de transparência */
     padding: 20px;
     border-radius: 10px;
     margin: 0;
