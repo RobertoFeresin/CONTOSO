@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
     box-sizing: border-box;
     background-image: url('/dependencias/Imagens/backgrund-contoso.jpg');
+    background-size: cover;
 }
 
-/*header*/
 header {
     position: fixed;
     top: 0;
@@ -52,7 +52,7 @@ header {
 
 #grid-central {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 300px 1fr; 
     gap: 20px;
     padding: 20px;
     margin-top: 80px;
@@ -64,6 +64,8 @@ header {
     background-color: #3c3f61;
     padding: 20px;
     height: auto;
+    width: 300px;
+    margin-right: 20px; 
 }
 
 #grid-direita {
@@ -71,6 +73,61 @@ header {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #3c3f61;
+    color: #cfcfd8;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #138496;
+}
+
+.collapsible-content {
+    background-color: #3c3f61;
+    padding: 20px;
+    border: 1px solid #3c3f61;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.button-with-icon {
+    display: flex;
+    align-items: center;
+    background-color:#3c3f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-with-icon:hover {
+    background-color: #138496;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.button-text {
+    font-size: 16px;
+}
+
+.collapsible-content.show {
+    max-height: 200px;
 }
 
 @media (max-width: 768px) {
@@ -224,4 +281,3 @@ header {
     align-items: center;
     height: 100%;
 }
-

@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./dependencias/Ferramentas/Boostrap5/css/bootstrap.css">
   <link rel="stylesheet" href="./dependencias/Ferramentas/Boostrap5/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>CONSTOSO</title>
@@ -38,14 +37,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <!-- Icons in Navbar, visible on desktop -->
-            <img src="/dependencias/Imagens/user-icon (2).png" class="img-fluid" alt="Usuário">
-            <img src="/dependencias/Imagens/notifications-icon.png" class="img-fluid" alt="Notificações">
-            <img src="/dependencias/Imagens/settings-icon.png" class="img-fluid" alt="Configurações">
-            <img src="/dependencias/Imagens/avatar-icon.png" class="img-fluid" alt="Avatar">
-          </form>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <img src="/dependencias/Imagens/user-icon (2).png" class="img-fluid" alt="Usuário">
+              <img src="/dependencias/Imagens/notifications-icon.png" class="img-fluid" alt="Notificações">
+              <img src="/dependencias/Imagens/settings-icon.png" class="img-fluid" alt="Configurações">
+              <img src="/dependencias/Imagens/avatar-icon.png" class="img-fluid" alt="Avatar">
+            </form>
         </div>
       </div>
     </nav>
@@ -54,50 +52,26 @@
   <main>
     <div id="grid-central">
       <div id="grid-esquerda">
-        <!--
-        <div>
-          <div>
-            <img src="/dependencias/Imagens/gear.png" alt="Imagem de engranagem para manutenção">
+        <div class="container">
+          <button type="button" class="btn" onclick="toggleCollapse()">Global</button>
+          <div id="demo" class="collapsible-content">
+           <div id="grid-esquerda">
+    <button type="button" class="button-with-icon">
+        <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+        <span class="button-text">North America</span>
+    </button>
+    <button type="button" class="button-with-icon">
+        <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+        <span class="button-text">EMEA</span>
+    </button>
+    <button type="button" class="button-with-icon">
+      <img src="/dependencias/Imagens/library-books.png" alt="Icone representando um conjunto de documentos" class="button-icon">
+      <span class="button-text">APAC</span>
+  </button>
+</div>
+
           </div>
-          <ul>
-            <li><img src="./dependencias/Imagens/home.png" alt="icone de uma casa">
-              <p>Home</p>
-            </li>
-            <li><img src="/dependencias/Imagens/plus.png" alt="icone do sinal de mais">
-              <p>Workspace</p>
-            </li>
-          </ul>
         </div>
-
-        <div>
-          <ul>
-            <li>Global
-            <li>North America</li>
-            <li>EMEA</li>
-            </li>
-
-            <li>Operations
-            <li>Public</li>
-            <li>Private</li>
-            </li>
-
-            <li>Stakeholders
-            <li>Groups</li>
-            <li>Entities</li>
-            </li>
-
-            <li>Market analysis
-            <li>2025</li>
-            <li>2030</li>
-            </li>
-
-            <li> Suppilers
-            <li>Jorgin do pneu</li>
-            <li>Flavio da borracharia</li>
-            </li>
-          </ul>
-
-        </div>-->
       </div>
 
       <div id="grid-direita">
@@ -131,7 +105,7 @@
                   </li>
                 </ul>
               </div>
-              
+
 
               <div class="g-col-4 tickets-closed">
                 <ul class="no-style-list">
@@ -163,18 +137,18 @@
 
               <div class="g-col-4 within-sla">
                 <ul class="no-style-list">
-                    <li>
-                        <h6>Within SLA</h6>
-                    </li>
-                    <li>
-                        <p>26,935</p>
-                    </li>
-                    <li>
-                        <p><span style="color:#356a27;">32,3%</span> vs LY</p>
-                    </li> 
+                  <li>
+                    <h6>Within SLA</h6>
+                  </li>
+                  <li>
+                    <p>26,935</p>
+                  </li>
+                  <li>
+                    <p><span style="color:#356a27;">32,3%</span> vs LY</p>
+                  </li>
                 </ul>
-            </div>
-              
+              </div>
+
             </div>
           </div>
         </div>
@@ -193,7 +167,7 @@
               </li>
               <li>
                 <div id="Espaco-grafico-by-priority"></div>
-            </li>
+              </li>
             </ul>
           </div>
 
@@ -211,7 +185,7 @@
                 </li>
                 <li>
                   <div id="Espaco-grafico-Tickets-by-Priority"></div>
-              </li>
+                </li>
               </ul>
             </div>
           </div>
@@ -229,7 +203,7 @@
               </li>
               <li>
                 <div id="Espaco-grafico-tickets-by-severity"></div>
-            </li>
+              </li>
             </ul>
           </div>
 
@@ -246,7 +220,7 @@
               </li>
               <li>
                 <div id="Espaco-grafico-Top-IT-Agent"></div>
-            </li>
+              </li>
             </ul>
           </div>
         </div>
@@ -265,7 +239,7 @@
               </li>
               <li>
                 <div id="Espaco-grafico-Tickets-by-Work-type"></div>
-            </li>
+              </li>
             </ul>
           </div>
 
@@ -282,7 +256,7 @@
               </li>
               <li>
                 <div id="Espaco-grafico-Tickets-Overtime"></div>
-            </li>
+              </li>
             </ul>
           </div>
 
@@ -299,7 +273,7 @@
               </li>
               <li>
                 <div id="Average-Satisfaction-Rating"></div>
-            </li>
+              </li>
             </ul>
           </div>
         </div>
@@ -308,8 +282,8 @@
     </div>
   </main>
 
-  <script src="./dependencias/Ferramentas/Boostrap5/js/bootstrap.js"></script>
   <script src="./dependencias/Ferramentas/Boostrap5/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
