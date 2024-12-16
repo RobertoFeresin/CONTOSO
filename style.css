@@ -59,7 +59,7 @@ header {
 }
 
 #grid-esquerda {
-    background-color:#3c3f61;
+    background-color: #3c3f61;
     padding: 20px;
     height: 800px;
 }
@@ -88,6 +88,15 @@ header {
         max-width: 100%;
         margin-bottom: 10px;
     }
+
+    .tickets-new-line {
+        flex-direction: column;
+    }
+
+    .g-col-4.tickets-new-card {
+        max-width: 100%; 
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -106,6 +115,25 @@ header {
     .g-col-4 {
         flex: 1 1 22%;
         max-width: 22%;
+    }
+
+    .tickets-new-line {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .g-col-4.tickets-new-card {
+        flex: 1;
+        max-width: 40%; 
+        background-color: #20204c;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
