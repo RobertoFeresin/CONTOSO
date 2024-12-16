@@ -8,7 +8,6 @@ function toggleCollapse(sectionId) {
       }
     });
   
-    // Alternar a visibilidade do conteúdo clicado
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
