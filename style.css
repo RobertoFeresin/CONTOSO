@@ -180,3 +180,28 @@ header {
     color: white; 
     margin: 0;
 }
+
+.tickets-category-card {
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+  }
+  
+  .Titulo-cards-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os itens dentro da coluna */
+    align-items: center; /* Garante que o conteúdo dentro da div também seja centralizado */
+    text-align: center; /* Garante que o texto seja centralizado */
+  }
+  
+  .no-style-list {
+    list-style-type: none; /* Remove a marcação das li */
+    padding-left: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+  }
+  
+  
+  
+  
