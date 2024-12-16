@@ -1,4 +1,3 @@
-/* Global Styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -7,66 +6,92 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Navbar Custom Styles */
-.navbar-nav {
+.navbar-custom {
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-/* Remove list styling for navbar items */
-.navbar-nav li {
+.navbar-custom li {
+    margin-right: 10px;
+}
+
+.navbar-custom p {
+    margin: 0;
+    font-size: 14px;
+    color: #80adbf;
+}
+
+
+.d-flex input {
+    margin-top: 0.3rem;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.d-flex img {
     margin-right: 15px;
+    margin-top: 0.3rem;
+    height: 30px;
+    width: 30px;
 }
 
-/* Menu Sections */
-#FirstSectionDiv, #SecondSectionDiv, #ThirdSectionDiv, #FourthSectionDiv, #FifthSectionDiv, #SixhSectionDiv {
-    display: none; /* Initially hide sections on mobile */
-    padding: 10px 0;
-    margin: 0;
-    text-align: left;
+#grid-central {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
-#FirstSectionDiv ul, #SecondSectionDiv ul, #ThirdSectionDiv ul, #FourthSectionDiv ul, #FifthSectionDiv ul, #SixhSectionDiv ul {
-    list-style-type: none;
-    padding: 0;
+#grid-esquerda {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#FirstSectionDiv li, #SecondSectionDiv li, #ThirdSectionDiv li, #FourthSectionDiv li, #FifthSectionDiv li, #SixhSectionDiv li {
-    margin: 5px 0;
+#grid-direita {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* For large screens (desktop), show menu sections */
-@media (min-width: 769px) {
-    .navbar-nav {
-        display: flex;
-        justify-content: space-around;
+
+@media (max-width: 768px) {
+    .d-flex img {
+        display: none;
     }
 
-    /* Show menu sections on desktop */
-    #FirstSectionDiv, #SecondSectionDiv, #ThirdSectionDiv, #FourthSectionDiv, #FifthSectionDiv, #SixhSectionDiv {
+    #grid-central {
+        grid-template-columns: 1fr; 
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block; 
+    }
+
+    
+    .navbar-toggler.collapsed + .navbar-collapse {
         display: block;
     }
-
-    .navbar-toggler {
-        display: none; /* Hide the hamburger button on larger screens */
-    }
 }
 
-/* For small screens (mobile), hide navbar items and show hamburger button */
-@media (max-width: 768px) {
-    .navbar-nav {
-        display: none; /* Hide menu items on small screens */
+@media (min-width: 769px) {
+
+    .d-flex img {
+        display: inline-block;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
     }
 
     .navbar-toggler {
-        display: block; /* Show the hamburger button */
-    }
-
-    /* When hamburger button is clicked, show the menu items */
-    .collapse.show {
-        display: block !important;
+        display: none; 
     }
 }
