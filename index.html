@@ -10,46 +10,77 @@
 </head>
 
 <body>
-
   <!-- Header Section -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #20204c;">
       <div class="container-fluid">
 
-        <!-- Custom Navbar with Logo and Text -->
+        <!-- Logo Section -->
         <a class="navbar-brand" href="#">
-          <ul class="navbar-custom">
-            <li>
-              <img src="/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo da marca contoso" height="40">
-            </li>
-            <li>
-              <p>|</p>
-            </li>
-            <li>
-              <p>Contoso company</p>
-            </li>
-          </ul>
+          <img src="/dependencias/Imagens/Logo_CONTOSCO.png" alt="Logo da marca Contoso" height="40">
         </a>
 
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Hamburger Button (Mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar Menu and Search Form -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Navbar Menu (collapsed on mobile) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dropdown</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
           </ul>
-
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <!-- Icons in Navbar, visible on desktop -->
-            <img src="/dependencias/Imagens/user-icon (2).png" class="img-fluid" alt="Usuário" height="30" width="30">
-            <img src="/dependencias/Imagens/notifications-icon.png" class="img-fluid" alt="Notificações" height="30" width="30">
-            <img src="/dependencias/Imagens/settings-icon.png" class="img-fluid" alt="Configurações" height="30" width="30">
-            <img src="/dependencias/Imagens/avatar-icon.png" class="img-fluid" alt="Avatar" height="30" width="30">
-          </form>
         </div>
+
+        <!-- Menu Sections -->
+        <div id="FirstSectionDiv">
+          <ul>
+            <li>teste</li>
+            <li>outro item</li>
+          </ul>
+        </div>
+        <div id="SecondSectionDiv">
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+          </ul>
+        </div>
+        <div id="ThirdSectionDiv">
+          <ul>
+            <li>teste 1</li>
+            <li>outro teste</li>
+          </ul>
+        </div>
+        <div id="FourthSectionDiv">
+          <ul>
+            <li>teste 2</li>
+            <li>item 3</li>
+          </ul>
+        </div>
+        <div id="FifthSectionDiv">
+          <ul>
+            <li>teste 3</li>
+            <li>outro item</li>
+          </ul>
+        </div>
+        <div id="SixhSectionDiv">
+          <ul>
+            <li>teste 4</li>
+            <li>item 4</li>
+          </ul>
+        </div>
+
       </div>
     </nav>
   </header>
