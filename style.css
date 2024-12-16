@@ -198,11 +198,14 @@ header {
 #footer-grid-esquerda p,
 #footer-grid-esquerda img {
     margin: 5px 0;
+    color: #cfcfd8;
+    margin-left: 10px;
 }
 
 #footer-grid-esquerda img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
 }
 
 @media (max-width: 768px) {
