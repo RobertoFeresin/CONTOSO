@@ -48,6 +48,20 @@ main {
     border-radius: 4px;
 }
 
+#searchInput {
+    width: 200px; 
+    font-size: 14px; 
+    padding: 5px; 
+    height: auto;
+    color: aliceblue;
+  }
+
+  #searchInput::placeholder {
+    color: aliceblue;
+    opacity: 1;  
+  }
+  
+  
 .dropdown-menu {
     border: 1px solid white;
 }
