@@ -11,3 +11,22 @@ document.getElementById('searchInput').addEventListener('input', function () {
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Selecionar todos os itens de dropdown
+    document.querySelectorAll(".dropdown-item").forEach((item) => {
+      item.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevenir comportamento padrão do link
+  
+        // Obter o valor do item selecionado
+        const value = this.getAttribute("data-value");
+  
+        // Encontrar o botão de dropdown correspondente
+        const dropdownButton = this.closest(".dropdown").querySelector(".dropdown-toggle");
+  
+        // Atualizar o texto do botão com o valor selecionado
+        dropdownButton.textContent = value;
+      });
+    });
+  });
+  
