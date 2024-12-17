@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Função para atualizar os gráficos
     function atualizarGrafico(graficoId, valores) {
-      const grafico = document.getElementById(graficoId);
+      const grafico = document.getElementById(graficoId).querySelector(".chart-container");
       grafico.innerHTML = ""; // Limpa o gráfico antes de atualizar
   
       valores.forEach(valor => {
