@@ -1,10 +1,16 @@
-function gerarGrafico(id, valores) {
+// Função para renderizar os gráficos
+function renderGrafico(id, valores) {
   const container = document.querySelector(`#${id} .grafico-container`);
-  container.innerHTML = ''; // Limpa o container antes de criar as barras
+  container.innerHTML = ''; // Limpa o container
 
-  const maxValue = Math.max(...valores); // Encontra o maior valor
+  if (!valores || valores.length === 0) {
+    container.innerHTML = '<p style="color: white;">No data available</p>';
+    return;
+  }
 
-  valores.forEach(valor => {
+  const maxValue = Math.max(...valores);
+
+  valores.forEach((valor) => {
     const bar = document.createElement('div');
     bar.className = 'bar';
     bar.style.height = `${(valor / maxValue) * 100}%`;
@@ -13,14 +19,84 @@ function gerarGrafico(id, valores) {
   });
 }
 
-// Dados para os gráficos
-const dados = {
-  grafico1: [50, 75, 100, 125, 150],
-  grafico2: [30, 60, 90, 120, 150],
-  grafico3: [10, 40, 70, 100, 130],
+// Dados por ano
+const dataByYear = {
+  2030: {
+    grafico1: [10, 30, 20, 40],
+    grafico2: [25, 5, 15, 35],
+    grafico3: [30, 40, 20, 50],
+    grafico4: [40, 50, 60, 30],
+    grafico5: [15, 25, 35, 45],
+    grafico6: [20, 30, 40, 50],
+    grafico7: [25, 35, 45, 50],
+    grafico8: [30, 40, 50, 60],
+    grafico9: [35, 45, 55, 65],
+  },
+  2035: {
+    grafico1: [15, 25, 35, 45],
+    grafico2: [10, 20, 30, 40],
+    grafico3: [25, 35, 45, 55],
+    grafico4: [45, 55, 65, 35],
+    grafico5: [20, 30, 40, 50],
+    grafico6: [25, 35, 45, 55],
+    grafico7: [30, 40, 50, 60],
+    grafico8: [35, 45, 55, 65],
+    grafico9: [40, 50, 60, 70],
+  },
+  2040: {
+    grafico1: [20, 10, 70, 60],
+    grafico2: [15, 25, 35, 45],
+    grafico3: [30, 35, 50, 60],
+    grafico4: [50, 60, 70, 40],
+    grafico5: [25, 35, 45, 55],
+    grafico6: [30, 40, 50, 60],
+    grafico7: [35, 45, 55, 65],
+    grafico8: [40, 50, 60, 70],
+    grafico9: [45, 55, 65, 75],
+  },
+  2045: {
+    grafico1: [20, 30, 40, 50],
+    grafico2: [15, 25, 35, 45],
+    grafico3: [30, 40, 50, 60],
+    grafico4: [60, 70, 80, 50],
+    grafico5: [30, 40, 50, 60],
+    grafico6: [35, 45, 55, 65],
+    grafico7: [40, 50, 60, 70],
+    grafico8: [45, 55, 65, 75],
+    grafico9: [50, 60, 70, 80],
+  },
+  2050: {
+    grafico1: [20, 30, 40, 50],
+    grafico2: [15, 25, 35, 45],
+    grafico3: [10, 20, 30, 70],
+    grafico4: [55, 65, 75, 45],
+    grafico5: [25, 35, 45, 55],
+    grafico6: [30, 40, 50, 60],
+    grafico7: [35, 45, 55, 65],
+    grafico8: [40, 50, 60, 70],
+    grafico9: [45, 55, 65, 75],
+  },
 };
 
-// Gera os gráficos
-for (const [id, valores] of Object.entries(dados)) {
-  gerarGrafico(id, valores);
+// Inicializa os gráficos com o ano padrão (2030)
+function initGrafico(ano = '2030') {
+  const graficos = dataByYear[ano];
+  if (graficos) {
+    Object.entries(graficos).forEach(([id, data]) => renderGrafico(id, data));
+  }
 }
+
+// Atualiza os gráficos ao selecionar um ano no dropdown
+const dropdownItems = document.querySelectorAll('#yearDropdown + .dropdown-menu .dropdown-item');
+dropdownItems.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    const selectedYear = event.target.getAttribute('data-value');
+    const yearText = event.target.textContent;
+
+    document.getElementById('yearDropdown').textContent = yearText; // Atualiza o botão dropdown
+    initGrafico(selectedYear); // Renderiza os gráficos para o ano selecionado
+  });
+});
+
+// Inicializa os gráficos ao carregar a página
+initGrafico('2030');
