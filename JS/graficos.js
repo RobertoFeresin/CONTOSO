@@ -1,7 +1,6 @@
-// Função para renderizar os gráficos
 function renderGrafico(id, valores) {
   const container = document.querySelector(`#${id} .grafico-container`);
-  container.innerHTML = ''; // Limpa o container
+  container.innerHTML = ''; 
 
   if (!valores || valores.length === 0) {
     container.innerHTML = '<p style="color: white;">No data available</p>';
@@ -19,18 +18,17 @@ function renderGrafico(id, valores) {
   });
 }
 
-// Dados por ano
 const dataByYear = {
   2030: {
     grafico1: [10, 30, 20, 40],
     grafico2: [25, 5, 15, 35],
     grafico3: [30, 40, 20, 50],
-    grafico4: [40, 50, 60, 30],
-    grafico5: [15, 25, 35, 45],
+    grafico4: [10, 37, 54, 21],
+    grafico5: [15, 32, 15, 57],
     grafico6: [20, 30, 40, 50],
-    grafico7: [25, 35, 45, 50],
+    grafico7: [25, 17, 45, 57],
     grafico8: [30, 40, 50, 60],
-    grafico9: [35, 45, 55, 65],
+    grafico9: [30, 30, 30, 30],
   },
   2035: {
     grafico1: [15, 25, 35, 45],
@@ -78,7 +76,6 @@ const dataByYear = {
   },
 };
 
-// Inicializa os gráficos com o ano padrão (2030)
 function initGrafico(ano = '2030') {
   const graficos = dataByYear[ano];
   if (graficos) {
@@ -86,17 +83,16 @@ function initGrafico(ano = '2030') {
   }
 }
 
-// Atualiza os gráficos ao selecionar um ano no dropdown
 const dropdownItems = document.querySelectorAll('#yearDropdown + .dropdown-menu .dropdown-item');
 dropdownItems.forEach((item) => {
   item.addEventListener('click', (event) => {
     const selectedYear = event.target.getAttribute('data-value');
     const yearText = event.target.textContent;
 
-    document.getElementById('yearDropdown').textContent = yearText; // Atualiza o botão dropdown
-    initGrafico(selectedYear); // Renderiza os gráficos para o ano selecionado
+    document.getElementById('yearDropdown').textContent = yearText; 
+    initGrafico(selectedYear); 
   });
 });
 
-// Inicializa os gráficos ao carregar a página
+
 initGrafico('2030');
