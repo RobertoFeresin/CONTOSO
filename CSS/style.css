@@ -1,0 +1,125 @@
+/* Importando os arquivos CSS */
+@import url('header.css');
+@import url('main.css');
+@import url('aside.css');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url('/CONTOSO/Imagens/backgrund-contoso.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.g-col-4 {
+    flex: 1 1 22%;
+    max-width: 22%;
+    background-color: #20204c;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.no-style-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.no-style-list li {
+    margin-bottom: 5px;
+}
+
+.g-col-4 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .d-flex img {
+        display: none;
+    }
+
+    .grid {
+        padding: 10px;
+    }
+
+    .g-col-4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tickets-new-line {
+        flex-direction: column;
+    }
+
+    .g-col-4.tickets-new-card {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .g-col-4 ul {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 800px) {
+    .d-flex img {
+        display: inline-block;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .g-col-4 {
+        flex: 1 1 22%;
+        max-width: 22%;
+    }
+
+    .tickets-new-line {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .g-col-4.tickets-new-card {
+        flex: 1;
+        max-width: 40%;
+        background-color: #20204c;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
