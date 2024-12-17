@@ -1,13 +1,13 @@
 aside {
     position: fixed !important;
-    top: 70px !important; /* Ajuste para não cobrir o header */
+    top: 70px !important;
     left: 0 !important;
-    width: 250px !important;
-    height: calc(100% - 70px) !important; /* Ajusta a altura para que o aside não ultrapasse a tela */
-    background-color: #3c3e61 !important; /* Cor de fundo que você pediu */
+    width: 200px !important;
+    height: calc(100% - 70px) !important;
+    background-color: #3c3e61 !important;
     color: white !important;
     padding-top: 20px !important;
-    z-index: 900 !important; /* Para garantir que o aside fique acima do conteúdo */
+    z-index: 900 !important;
 }
 
 aside .menu {
@@ -36,16 +36,15 @@ aside .menu a:hover {
     color: #80adbf !important;
 }
 
-/* Customização da barra de rolagem */
 aside::-webkit-scrollbar {
-    width: 8px !important; /* Largura da barra de rolagem */
+    width: 8px !important;
 }
 
 aside::-webkit-scrollbar-thumb {
-    background-color: #80adbf !important; /* Cor da parte deslizante da barra de rolagem */
-    border-radius: 10px !important; /* Bordas arredondadas para a barra de rolagem */
+    background-color: #80adbf !important;
+    border-radius: 10px !important;
 }
 
 aside::-webkit-scrollbar-track {
-    background-color: #3c3e61 !important; /* Cor de fundo da trilha da barra de rolagem */
+    background-color: #3c3e61 !important;
 }
